@@ -1,19 +1,23 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.06145 23.1079C5.26816 22.3769 -3.39077 20.6274 1.4173 5.06384C9.6344 6.09939 16.9728 14.0644 9.06145 23.1079Z" fill="url(#paint0_linear_17557_2021)"/>
-<path d="M8.91928 23.0939C5.27642 21.2223 0.78371 4.20891 17.0071 0C20.7569 7.19341 19.6212 16.5452 8.91928 23.0939Z" fill="url(#paint1_linear_17557_2021)"/>
-<path d="M8.91388 23.0788C8.73534 19.8817 10.1585 9.08525 23.5699 13.1107C23.1812 20.1229 18.984 26.4182 8.91388 23.0788Z" fill="url(#paint2_linear_17557_2021)"/>
-<defs>
-<linearGradient id="paint0_linear_17557_2021" x1="3.77557" y1="5.91571" x2="5.23185" y2="21.5589" gradientUnits="userSpaceOnUse">
-<stop stop-color="#18E299"/>
-<stop offset="1" stop-color="#15803D"/>
-</linearGradient>
-<linearGradient id="paint1_linear_17557_2021" x1="12.1711" y1="-0.718425" x2="10.1897" y2="22.9832" gradientUnits="userSpaceOnUse">
-<stop stop-color="#16A34A"/>
-<stop offset="1" stop-color="#4ADE80"/>
-</linearGradient>
-<linearGradient id="paint2_linear_17557_2021" x1="23.1327" y1="15.353" x2="9.33841" y2="18.5196" gradientUnits="userSpaceOnUse">
-<stop stop-color="#4ADE80"/>
-<stop offset="1" stop-color="#0D9373"/>
-</linearGradient>
-</defs>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>logo</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="256" height="256" rx="128"></rect>
+    </defs>
+    <g id="logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="512备份-3">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="矩形" fill="#FE405B" xlink:href="#path-1"></use>
+            <g id="编组-3" mask="url(#mask-2)">
+                <g transform="translate(10.1501, 31)">
+                    <path d="M84.4766485,36.1689405 L30.7734177,74.9253861 C28.982052,76.2181755 28.5778761,78.7183771 29.8706654,80.5097427 C30.6226019,81.5516706 31.8292988,82.1689405 33.1142198,82.1689405 L96.0731044,82.1689405 L96.0731044,82.1689405 L84.4766485,36.1689405 Z" id="路径-2" fill="#F1C39D"></path>
+                    <path d="M131.349869,0 C160.897103,-7.10542736e-15 184.849869,23.9527659 184.849869,53.5 L184.849869,155 C184.849869,198.630495 149.480364,234 105.849869,234 L77.8498688,234 L77.8498688,234 L77.8498688,53.5 C77.8498688,23.9527659 101.802635,7.10542736e-15 131.349869,0 Z" id="矩形" fill="#000000"></path>
+                    <circle id="椭圆形" fill="#FFFFFF" cx="128.849869" cy="51" r="13"></circle>
+                    <polygon id="路径" fill="#000000" points="0 153.409225 89.2855377 90.6458282 98.9319 248.382172 9.72323608 196.891937"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
