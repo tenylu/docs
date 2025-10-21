@@ -1,0 +1,88 @@
+---
+title: "Windows 使用教程"
+description: "CrowVPN Windows 平台配置和使用指南"
+---
+
+## Clash-Windows
+
+### 下载并安装 Clash for Windows
+
+下载 Clash for Windows (安装版) > 备用下载地址 >
+
+安装时请选择 "为使用这台电脑的任何人安装"；运行时请右键，以管理员身份运行。
+
+![下载并安装 Clash for Windows](/images/clash-windows-config-1.webp)
+
+<Warning>
+  **注意事项：**
+  - 确认电脑时间是否正确同步北京时间：查看时间 偏差1分钟都会无法连接
+  - 首次打开可能会出现防火墙提示，点击允许（禁止360、腾讯安全等国内防御软件）
+  - 打开发现软件不见，直接在右下角菜单栏内展开，可发现
+  - 如果你电脑系统还是32位，请点击此处下载
+</Warning>
+
+### 添加 Clash 配置订阅
+
+前往官网进入用户管理的首页点击（我的套餐概况）右上角【一键配置】，一键配置失败，才选择手动配置；
+
+> 禁止使用微信来开启网页，否则无法跳转一键配置
+
+![添加 Clash 配置订阅](/images/clashx-config-3.webp)
+
+<AccordionGroup>
+  <Accordion title="一键配置">
+    点击【一键配置】，出现弹窗，点击【Clash开启】。点击后出现托管的配置文件窗口，直接点击确定即可。
+  </Accordion>
+  
+  <Accordion title="手动配置">
+    点击【复制订阅链接】，打开 Clash，点击底部菜单栏中的 Clash 图标打开客户端界面，选择【Profiles】，把复制的订阅链接，输入到输入框内，然后点击【Download】，显示【Success】表示成功
+    
+    ![Clash for Windows 手动配置步骤1](/images/clash-windows-config-3.webp)
+    
+    ![Clash for Windows 手动配置步骤2](/images/clash-windows-config-4.png)
+    
+    ![Clash for Windows 手动配置步骤3](/images/clash-windows-config-5.png)
+  </Accordion>
+</AccordionGroup>
+
+### 选择节点
+
+点击窗口左侧的 Proxies (代理)，选择需要使用的节点，建议选择【自动选择】，系统自动帮你判断切换节点，无需手动选择。
+
+<Info>
+  默认情况下，Clash 使用 **Rule (规则) 模式**。不推荐选择 Global (全局) 与 Direct (直连) 模式。
+</Info>
+
+![选择节点](/images/clash-windows-config-6.png)
+
+### 开启代理
+
+点击窗口左侧的 General (通用)。开启 System Proxy (系统代理)，Clash for Windows 便开始接管系统流量。
+
+![开启代理](/images/clash-windows-config-7.webp)
+
+### 确定出国
+
+您可以先试一下浏览器打开 Youtube，确认已经成功连接。
+
+发现无法打开 youtube 等网站，请看查阅帮助中心问题解决。
+
+<Info>
+  请使用 Chrome、Firefox、Safari 等国外浏览器。
+  禁止使用 360、QQ 等国内浏览器（存在流量监控）。
+</Info>
+
+---
+
+## 技术支持
+
+如果遇到其他问题，请联系技术支持：
+
+<CardGroup cols={2}>
+  <Card title="邮箱支持" icon="envelope">
+    发送邮件至 support@crowvpn.com
+  </Card>
+  <Card title="用户面板" icon="user">
+    登录用户面板提交工单
+  </Card>
+</CardGroup>

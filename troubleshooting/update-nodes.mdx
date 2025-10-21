@@ -1,0 +1,185 @@
+---
+title: "更新节点"
+description: "CrowVPN 节点更新指南，解决连接问题"
+---
+
+## 什么时候需要更新节点？
+
+以下情况需要更新节点配置：
+
+- 续费用户，需要获取新的节点信息
+- 很久没用突然上不去，节点可能已更新
+- 当前节点无法连接，需要获取最新节点列表
+- 配置链接域名需要更换
+
+<Warning>
+  平台节点会被 GFW 大数据封堵，导致请求服务器 IP 被墙，无法拉取更新。请按照本指南更换配置链接的域名。
+</Warning>
+
+---
+
+## 域名更换说明
+
+将原链接中的域名 `cdn.niudache.com` 替换为 `user.crowmesh.com`，其余路径保持不变。
+
+**示例：**
+- 原链接：`https://cdn.niudache.com/api/v1/client/subscribe?token=YOUR_TOKEN`
+- 新链接：`https://user.crowmesh.com/api/v1/client/subscribe?token=YOUR_TOKEN`
+
+---
+
+## 各平台更新方法
+
+### Windows 平台
+
+<AccordionGroup>
+  <Accordion title="Clash for Windows">
+    1. 打开 **Clash for Windows**
+    2. 在 **General** 里先关闭 **Proxy** 开关
+    3. 打开 **Profiles**，选中 **CrowVPN** 配置，右键列表选择 **Settings**（设置）
+    4. 在 **URL** 中把域名改为 `user.crowmesh.com`
+    5. 点击 **OK** 保存后，回到 **General** 重新打开 **Proxy** 开关
+
+    ![Clash for Windows 更新](/images/07a9d475-31f5-41ba-b0bd-3082f28090ad.png)
+  </Accordion>
+  
+  <Accordion title="CrowVPN 客户端">
+    1. 打开 CrowVPN 客户端
+    2. 进入设置页面
+    3. 找到配置链接设置
+    4. 将域名更改为 `user.crowmesh.com`
+    5. 保存设置并重新连接
+  </Accordion>
+</AccordionGroup>
+
+### macOS 平台
+
+<AccordionGroup>
+  <Accordion title="ClashX">
+    1. 打开 **ClashX**
+    2. 关闭 **设置为系统代理**
+    3. 依次进入：**配置 → 托管配置 → 管理**
+
+    ![ClashX 配置管理](/images/1280X1280-4.PNG)
+
+    4. **编辑链接**，将链接中的域名改为 `user.crowmesh.com`
+    5. 确认保存后，重新开启 **设置为系统代理**
+
+    ![ClashX 编辑配置](/images/1280X1280-5.PNG)
+  </Accordion>
+  
+  <Accordion title="CrowVPN 客户端">
+    1. 打开 CrowVPN 客户端
+    2. 进入设置页面
+    3. 找到配置链接设置
+    4. 将域名更改为 `user.crowmesh.com`
+    5. 保存设置并重新连接
+  </Accordion>
+</AccordionGroup>
+
+### iOS 平台
+
+<AccordionGroup>
+  <Accordion title="Shadowrocket">
+    1. 打开 **Shadowrocket**，先关闭顶部总开关
+    2. 选择 **CrowVPN** 的 **叹号（详情）** 图标
+    3. 将 **URL** 中的域名改为 `user.crowmesh.com`
+    4. 保存后，重新打开总开关
+
+    ![Shadowrocket 更新](/images/227f243c-2b71-4fc6-b1f3-ddf0a4b604ca.png)
+  </Accordion>
+  
+  <Accordion title="Quantumult X">
+    1. 打开 Quantumult X
+    2. 点击右下角 **风车** 图标
+    3. 点击 **节点** → **引用**
+    4. 选择 CrowVPN 配置，点击编辑
+    5. 将资源链接中的域名改为 `user.crowmesh.com`
+    6. 保存配置
+  </Accordion>
+</AccordionGroup>
+
+### Android 平台
+
+<AccordionGroup>
+  <Accordion title="Clash for Android">
+    1. 打开 **Clash for Android**，先 **暂停代理**
+    2. 进入 **配置（Profiles）**
+    3. 在 **CrowVPN** 条目右侧点击 **更多（⋮） → 编辑（Edit）**
+    4. 将 **URL** 中的域名改为 `user.crowmesh.com`
+    5. 保存后，重新打开代理开关
+
+    ![Clash for Android 更新](/images/9f0c7839-d16b-4e19-b0d9-17251d584c80.png)
+  </Accordion>
+  
+  <Accordion title="V2rayNG">
+    1. 打开 V2rayNG
+    2. 点击右上角 **+** 按钮
+    3. 选择 **从剪贴板导入** 或 **手动输入**
+    4. 输入新的配置链接（使用 `user.crowmesh.com` 域名）
+    5. 点击确定导入配置
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 验证更新结果
+
+更新完成后，请验证配置是否正确：
+
+<Steps>
+  <Step title="检查域名">
+    确认配置链接中的域名为 `user.crowmesh.com`
+  </Step>
+  <Step title="测试连接">
+    尝试连接到 CrowVPN 服务
+  </Step>
+  <Step title="选择节点">
+    查看可用节点列表是否正常显示
+  </Step>
+  <Step title="测试网络">
+    访问被墙网站验证代理是否生效
+  </Step>
+</Steps>
+
+---
+
+## 常见问题
+
+<AccordionGroup>
+  <Accordion title="更新后仍然无法连接">
+    1. 确认域名已正确更改为 `user.crowmesh.com`
+    2. 检查网络连接是否正常
+    3. 尝试重启客户端
+    4. 联系技术支持获取帮助
+  </Accordion>
+  
+  <Accordion title="找不到配置设置">
+    不同客户端的设置位置可能不同：
+    - Clash 系列：通常在 Profiles 或配置页面
+    - Shadowrocket：在配置详情页面
+    - V2rayNG：在订阅设置页面
+  </Accordion>
+  
+  <Accordion title="配置链接格式">
+    正确的配置链接格式：
+    `https://user.crowmesh.com/api/v1/client/subscribe?token=YOUR_TOKEN`
+    
+    其中 `YOUR_TOKEN` 需要替换为您的实际 token
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 技术支持
+
+如果更新过程中遇到问题，请联系技术支持：
+
+<CardGroup cols={2}>
+  <Card title="邮箱支持" icon="envelope">
+    发送邮件至 support@crowvpn.com
+  </Card>
+  <Card title="用户面板" icon="user">
+    登录用户面板提交工单
+  </Card>
+</CardGroup>

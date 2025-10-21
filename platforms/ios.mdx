@@ -1,0 +1,160 @@
+---
+title: "iOS 使用教程"
+description: "CrowVPN iOS 平台配置和使用指南"
+---
+
+## 支持的客户端
+
+CrowVPN 在 iOS 平台支持以下客户端：
+
+- **Shadowrocket**（小火箭，推荐）
+
+---
+
+## Shadowrocket（小火箭）
+
+### 切换海外 AppleID 账号
+
+下载之前，请先切换美区/港等其他地区的 AppStore 账号，如果没有经验可以看以下教程：
+
+> ##### 切换 AppleID 账号教程
+> 
+> 点击查看 [AppleID 账号切换教程](/platforms/appleid-switch)
+
+![AppleID 切换步骤 1](/images/appleid-switch-1.webp)
+
+### 安装 Shadowrocket
+
+确认已经切换账号后，直接打开右上角头像，选择【已购项目 – 家庭组 – 软件在这里】，找到 Shadowrocket。安装 APP。
+
+![App Store 已购项目](/images/appleid-switch-2.webp)
+
+<Steps>
+  <Step title="已购项目">
+    在 App Store 中点击右上角头像
+  </Step>
+  <Step title="家庭组">
+    选择"已购项目" → "家庭组"
+  </Step>
+  <Step title="软件在这里">
+    在列表中找到 Shadowrocket 并安装
+  </Step>
+</Steps>
+
+![Shadowrocket 安装步骤](/images/appleid-switch-3.webp)
+
+### 提示"此app不再与你共享"解决方法
+
+使用共享账号随便下载一个 APP，即可解除此限制。
+
+### 配置 Shadowrocket
+
+首先通过手机浏览器，打开平台管理首页登录，**PS：请不要用微信打开网站，否则无法访问**
+
+如果一键配置导入无法跳转，请尝试手动配置教程
+
+<AccordionGroup>
+  <Accordion title="电脑看教程">
+    电脑：点击【一键配置】，出现弹窗，点击【扫描二维码套餐】，出现【二维码】
+    
+    回到 iPhone：打开 Shadowrocket 【首页】点击左上角【 [—] 】扫一扫，就完成自动添加。
+    
+    ![电脑端一键配置](/images/shadowrocket-iphone-config.png)
+  </Accordion>
+  
+  <Accordion title="iPhone看教程">
+    点击【一键配置】，出现弹窗，【点击 Shadowrocket 开启】
+    
+    ![iPhone 端一键配置](/images/shadowrocket-computer-config.png)
+  </Accordion>
+</AccordionGroup>
+
+### 开启上网开关
+
+点击展开 【CrowVPN】 那一栏，按需选择列表【节点】，再点击第一栏的开关，首次打开时会有一个增加 VPN 配置的提示，选择允许。
+
+就可以开始愉快地上网了。可以自行打开 YouTube、Google 等网站进行测试是否连接。
+
+![Shadowrocket 连接步骤](/images/shadowrocket-setup-4.webp)
+
+<Steps>
+  <Step title="CrowVPN展开">
+    CrowVPN 展开（默认展开）
+  </Step>
+  <Step title="选择地理节点">
+    选择地理节点
+  </Step>
+  <Step title="打开连接开关">
+    打开连接开关
+  </Step>
+</Steps>
+
+---
+
+## 系统设置
+
+### 信任证书
+
+某些功能可能需要安装证书：
+
+1. 在 Shadowrocket 中，进入 **设置** → **证书**
+2. 点击 **安装证书** 并按照提示操作
+3. 在 **设置** → **通用** → **VPN与设备管理** 中信任证书
+
+### 网络权限
+
+确保应用有网络访问权限：
+
+1. 打开 **设置** → **隐私与安全性** → **本地网络**
+2. 确保 Shadowrocket 或 Quantumult X 已开启
+
+---
+
+## 常见问题
+
+### 无法连接
+
+1. 检查网络连接是否正常
+2. 确认 CrowVPN 账号状态和套餐是否有效
+3. 尝试更换其他节点
+4. 检查 iOS 系统版本是否支持
+
+### 速度慢
+
+1. 尝试更换不同的节点
+2. 检查本地网络状况
+3. 选择距离较近的节点
+
+### 配置更新
+
+如果遇到连接问题，可能需要更新配置：
+
+1. 在 Shadowrocket 中，选择 CrowVPN 配置
+2. 点击 **更新** 按钮更新配置
+3. 或者重新添加配置链接
+
+### 更新节点详细步骤
+
+1. 打开 **Shadowrocket**，先关闭顶部总开关
+2. 选择 **CrowVPN** 的 **叹号（详情）** 图标
+3. 将 **URL** 中的域名改为 `user.crowmesh.com`
+4. 保存后，重新打开总开关
+
+![Shadowrocket 更新](/images/227f243c-2b71-4fc6-b1f3-ddf0a4b604ca.png)
+
+### 应用无法下载
+
+如果无法在 App Store 下载应用：
+
+1. 确保使用的是非中国区 Apple ID
+2. 可以联系客服获取美区账号
+3. 或者通过其他渠道购买应用
+
+---
+
+## 技术支持
+
+如果遇到其他问题，请联系技术支持：
+
+- 邮箱：support@crowvpn.com
+- 用户面板：[https://user.crowmesh.com](https://user.crowmesh.com)

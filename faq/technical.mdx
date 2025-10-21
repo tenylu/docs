@@ -1,0 +1,273 @@
+---
+title: "技术相关"
+description: "CrowVPN 技术问题和故障排除"
+---
+
+## 技术故障排除
+
+### 常见技术问题
+
+<AccordionGroup>
+  <Accordion title="线路超时">
+    如果使用过程中发现线路超时了：
+    1. 尝试更新节点，点击查看更新节点教程
+    2. 切换到其它节点线路继续使用
+    3. 检查网络连接是否稳定
+    4. 联系技术支持获取帮助
+  </Accordion>
+  
+  <Accordion title="Google 地区识别错误">
+    如果部分线路会出现被 Google 错误识别地区的问题：
+    - 例如使用上海洛杉矶线路，但它识别为香港
+    - 可能与 Google IP 库有关
+    - 建议你更换其它能正常识别的节点进行使用
+  </Accordion>
+  
+  <Accordion title="CN2 线路验证码问题">
+    为什么我用标识带有 CN2 线路时，在 YouTube 中搜索会出现验证码？
+    - 因为我们标识带有 CN2 线路使用的是阿里云的服务器
+    - Google 对阿里云有特别照顾，这个暂时无解
+    - 若介意可换用其他线路
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 网络诊断
+
+### 基础网络检查
+
+<AccordionGroup>
+  <Accordion title="Ping 测试">
+    1. 打开命令提示符（Windows）或终端（macOS/Linux）
+    2. 执行 `ping 8.8.8.8` 测试网络连通性
+    3. 如果 ping 不通，说明网络有问题
+    4. 尝试 ping 其他 DNS 服务器如 1.1.1.1
+  </Accordion>
+  
+  <Accordion title="DNS 解析测试">
+    1. 执行 `nslookup google.com` 测试 DNS 解析
+    2. 如果解析失败，尝试更换 DNS 服务器
+    3. 推荐使用 8.8.8.8 或 1.1.1.1
+  </Accordion>
+  
+  <Accordion title="Traceroute 测试">
+    1. 执行 `tracert 8.8.8.8`（Windows）或 `traceroute 8.8.8.8`（macOS/Linux）
+    2. 查看网络路径是否正常
+    3. 检查是否有网络节点阻塞
+  </Accordion>
+</AccordionGroup>
+
+### 客户端诊断
+
+<AccordionGroup>
+  <Accordion title="查看客户端日志">
+    1. 在客户端中找到日志或错误信息
+    2. 查看具体的错误描述
+    3. 根据错误信息进行相应处理
+    4. 将错误信息提供给技术支持
+  </Accordion>
+  
+  <Accordion title="重置客户端设置">
+    1. 完全关闭客户端
+    2. 删除客户端配置文件
+    3. 重新启动客户端
+    4. 重新配置 CrowVPN
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 系统兼容性
+
+### 支持的操作系统
+
+<AccordionGroup>
+  <Accordion title="Windows 系统">
+    支持版本：
+    - Windows 7 及以上版本
+    - Windows 10/11 推荐
+    - 支持 32 位和 64 位系统
+    
+    注意事项：
+    - 需要管理员权限安装
+    - 建议关闭 Windows Defender 实时保护
+  </Accordion>
+  
+  <Accordion title="macOS 系统">
+    支持版本：
+    - macOS 10.12 及以上版本
+    - macOS 11/12/13/14 推荐
+    
+    注意事项：
+    - 需要允许应用运行权限
+    - 可能需要关闭 SIP（系统完整性保护）
+  </Accordion>
+  
+  <Accordion title="iOS 系统">
+    支持版本：
+    - iOS 10.0 及以上版本
+    - iOS 14/15/16/17 推荐
+    
+    注意事项：
+    - 需要非中国区 Apple ID
+    - 部分功能需要越狱设备
+  </Accordion>
+  
+  <Accordion title="Android 系统">
+    支持版本：
+    - Android 5.0 及以上版本
+    - Android 8/9/10/11/12/13 推荐
+    
+    注意事项：
+    - 需要允许安装未知来源应用
+    - 建议关闭省电优化
+  </Accordion>
+</AccordionGroup>
+
+### 不支持的平台
+
+<AccordionGroup>
+  <Accordion title="华为鸿蒙系统">
+    华为鸿蒙不支持：
+    - 可以安装可以折腾一下，不建议使用
+    - 现在华为鸿蒙系统已经内置检测工具
+    - 翻墙会被知晓，并上传
+    - 存在安全风险
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 安全相关
+
+### 安全建议
+
+<AccordionGroup>
+  <Accordion title="账号安全">
+    1. 使用强密码，包含字母、数字和特殊字符
+    2. 定期更换密码
+    3. 不要在公共设备上保存登录信息
+    4. 使用完毕后及时退出登录
+  </Accordion>
+  
+  <Accordion title="网络安全">
+    1. 使用 HTTPS 网站
+    2. 避免在公共 Wi-Fi 上使用敏感服务
+    3. 定期更新客户端
+    4. 不要点击可疑链接
+  </Accordion>
+  
+  <Accordion title="隐私保护">
+    1. 不要分享账号信息
+    2. 定期检查登录记录
+    3. 使用完毕后及时断开连接
+    4. 避免在敏感操作时使用代理
+  </Accordion>
+</AccordionGroup>
+
+### 共享账号风险
+
+<AccordionGroup>
+  <Accordion title="共享账号声明">
+    关于共享 AppleID 声明：
+    - 使用 AppleID 共享账号注意事项
+    - 请严格按教程操作切换账号
+    - 否则由于擅自操作遇到不可挽回问题
+    - 平台一律不负责
+  </Accordion>
+  
+  <Accordion title="安全建议">
+    1. 个人推荐你使用自己的账号，去淘宝购买
+    2. 因为共享账号涉及大量设备使用
+    3. 存在信息安全隐患
+    4. 建议购买正版应用
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 性能优化
+
+### 网络优化
+
+<AccordionGroup>
+  <Accordion title="DNS 优化">
+    1. 使用更快的 DNS 服务器：
+       - 8.8.8.8（Google）
+       - 1.1.1.1（Cloudflare）
+       - 114.114.114.114（国内）
+    2. 定期清理 DNS 缓存
+    3. 避免使用 ISP 默认 DNS
+  </Accordion>
+  
+  <Accordion title="网络设置优化">
+    1. 使用有线网络连接
+    2. 关闭不必要的网络应用
+    3. 调整网络适配器设置
+    4. 定期重启网络设备
+  </Accordion>
+</AccordionGroup>
+
+### 客户端优化
+
+<AccordionGroup>
+  <Accordion title="客户端设置">
+    1. 使用最新版本的客户端
+    2. 定期更新节点配置
+    3. 选择合适的代理模式
+    4. 避免频繁切换节点
+  </Accordion>
+  
+  <Accordion title="系统优化">
+    1. 关闭不必要的后台应用
+    2. 定期清理系统垃圾
+    3. 保持系统更新
+    4. 使用性能监控工具
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 故障报告
+
+### 如何报告故障
+
+<AccordionGroup>
+  <Accordion title="收集信息">
+    报告故障时请提供：
+    1. 使用的客户端和版本
+    2. 操作系统版本
+    3. 具体的错误信息
+    4. 问题发生的具体时间
+    5. 已尝试的解决方法
+    6. 网络环境描述
+  </Accordion>
+  
+  <Accordion title="联系方式">
+    1. 发送邮件至 support@crowvpn.com
+    2. 登录用户面板提交工单
+    3. 在用户面板查看工单状态
+    4. 等待技术支持回复
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 技术支持
+
+如果遇到技术问题，请联系技术支持：
+
+<CardGroup cols={2}>
+  <Card title="邮箱支持" icon="envelope">
+    发送邮件至 support@crowvpn.com，详细描述问题
+  </Card>
+  <Card title="用户面板" icon="user">
+    登录用户面板提交工单，获得专业支持
+  </Card>
+</CardGroup>
+
+<Info>
+  关于 CrowVPN 平台专家服务态度相关问题：
+  由于平台特殊性，专家都是行业凤毛菱角的专业人士，性格态度自然与常人不一样，遇到恶劣态度，请冷静对待，重点能解决科学上网才是第一。
+</Info>

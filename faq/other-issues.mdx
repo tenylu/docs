@@ -1,0 +1,92 @@
+---
+title: "其他常见问题"
+description: "CrowVPN 其他常见问题解答"
+---
+
+## 其他常见问题
+
+### 网络相关问题
+
+<AccordionGroup>
+  <Accordion title="为什么我用标识带有 CN2 线路时，在 YouTube 中搜索会出现验证码？">
+    因为我们标识带有 CN2 线路使用的是阿里云的服务器，而 Google 对阿里云有特别照顾，这个暂时无解，若介意可换用其他线路。
+  </Accordion>
+  
+  <Accordion title="我发现部分线路会出现被 Google 错误识别地区的问题，如何解决？">
+    例如使用上海洛杉矶线路，但它识别为香港，可能与 Google IP 库有关，建议你更换其它能正常识别的节点进行使用。
+  </Accordion>
+  
+  <Accordion title="我人在国外，请问 CrowVPN 有回国线路吗？">
+    目前平台不提供回国线路，回国线路约束条件较多，风险大。
+  </Accordion>
+</AccordionGroup>
+
+### 使用相关问题
+
+<AccordionGroup>
+  <Accordion title="我能使用 CrowVPN 进行 BT 下载吗？">
+    不可以，所有 BT 被禁止使用，包括常用的迅雷下载，建议使用迅雷时关闭代理，如果是在路由器上则建议将需要进行下载操作的设备内网 IP 加入到黑名单中绕开代理。
+  </Accordion>
+  
+  <Accordion title="我流量用不完，或由于其他原因，想找人合租共用 CrowVPN 服务，请问可以吗？">
+    可以，需要你个人约束下这个合租人的权益，不然平台因为违规操作将你账号被禁止，后果自负。
+  </Accordion>
+  
+  <Accordion title="后台节点列表中的 1 倍率、4 倍率是什么意思？">
+    1 倍率表示你用 1M 流量，后台即给你统计 1M；同理可得，4 倍率表示你用 1M 流量，后台统计为 4M。（目前平台没有倍率限制）
+  </Accordion>
+</AccordionGroup>
+
+### 技术相关问题
+
+<AccordionGroup>
+  <Accordion title="后台节点列表那些 NM/IPLC/BGP/专线是什么意思？">
+    请直接参看用户面板-我的套餐-节点状态的说明：
+    - **NM** 代表普通线路
+    - **IPLC** 代表线路是全网
+    - **BGP** 代表线路电信为主
+    - **专线** 代表独享网速
+  </Accordion>
+  
+  <Accordion title="使用过程中发现线路超时了，我该怎么办？">
+    你可以进行以下两个操作：
+    1. 尝试更新节点，点击查看更新节点教程
+    2. 切换到其它节点线路继续使用
+  </Accordion>
+  
+  <Accordion title="关于 CrowVPN 平台专家服务态度相关问题">
+    由于平台特殊性，专家都是行业凤毛菱角的专业人士，性格态度自然与常人不一样，遇到恶劣态度，请冷静对待，重点能解决科学上网才是第一。
+  </Accordion>
+</AccordionGroup>
+
+### 客户端相关问题
+
+<AccordionGroup>
+  <Accordion title="我要用什么软件才能用 CrowVPN 的服务？">
+    根据你使用的平台进行选择：
+    - **iOS**：推荐 Shadowrocket、Quantumult X
+    - **Android**：V2rayNG、Clash Android
+    - **Windows**：Clash for Windows
+    - **macOS**：ClashX
+    - **路由器**：固件推荐 LEDE 或梅林
+  </Accordion>
+  
+  <Accordion title="我购买了 CrowVPN 的服务，但没有 iOS 上的科学上网软件，请问你们是否提供共享账号？">
+    有的，在平台的教程里有提供账号密码，（个人推荐你使用自己的账号，去淘宝购买），因为共享账号涉及大量设备使用，存在信息安全隐患。
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 技术支持
+
+如果遇到其他问题，请联系技术支持：
+
+<CardGroup cols={2}>
+  <Card title="邮箱支持" icon="envelope">
+    发送邮件至 support@crowvpn.com
+  </Card>
+  <Card title="用户面板" icon="user">
+    登录用户面板提交工单
+  </Card>
+</CardGroup>

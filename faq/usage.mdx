@@ -1,0 +1,258 @@
+---
+title: "使用相关"
+description: "CrowVPN 使用过程中的常见问题"
+---
+
+## 客户端使用
+
+### 推荐使用的客户端
+
+根据您使用的平台进行选择：
+
+<AccordionGroup>
+  <Accordion title="iOS 设备">
+    推荐客户端：
+    - **Shadowrocket**（小火箭）
+    - **Quantumult X**
+    
+    注意：
+    - 以上都为付费软件且仅能在非中国区的 Apple Store 购买
+    - 账号及礼品卡都可自行在淘宝解决
+    - 也可以使用平台提供的美区 AppStore 账号密码进行购买
+  </Accordion>
+  
+  <Accordion title="Android 设备">
+    推荐客户端：
+    - **V2rayNG**
+    - **Clash for Android**
+  </Accordion>
+  
+  <Accordion title="Windows 电脑">
+    推荐客户端：
+    - **CrowVPN 客户端**（正在开发中）
+    - **Clash for Windows**
+  </Accordion>
+  
+  <Accordion title="macOS 电脑">
+    推荐客户端：
+    - **CrowVPN 客户端**（正在开发中）
+    - **ClashX**
+  </Accordion>
+  
+  <Accordion title="路由器">
+    固件推荐：
+    - **LEDE** 或 **梅林**
+    
+    路由器推荐：
+    - 预算足够：华硕 AC-RT86U 或 GT5300
+    - 预算有限：斐讯 K3 或 K2P
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 使用限制
+
+### 禁止使用的服务
+
+<AccordionGroup>
+  <Accordion title="BT 下载限制">
+    **不可以**使用 CrowVPN 进行 BT 下载：
+    - 所有 BT 被禁止使用，包括常用的迅雷下载
+    - 建议使用迅雷时关闭代理
+    - 如果是在路由器上则建议将需要进行下载操作的设备内网IP加入到黑名单中绕开代理
+    - 现阶段我们暂时只对大流量或长时间的 BT 行为进行封禁处理
+    - 但后续可能将范围扩大至所有 BT 行为
+    - 为防止引起争议，请务必保证自己正常使用
+  </Accordion>
+  
+  <Accordion title="其他限制">
+    使用 CrowVPN 时请注意：
+    - 遵守当地法律法规
+    - 不得用于违法活动
+    - 不得恶意攻击他人
+    - 不得传播违法信息
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 节点选择
+
+### 节点类型说明
+
+<AccordionGroup>
+  <Accordion title="节点标识含义">
+    - **NM**：普通线路，适合日常使用
+    - **IPLC**：专线线路，速度更快，延迟更低
+    - **BGP**：电信优化线路，适合电信用户
+    - **专线**：独享网速，性能最佳
+  </Accordion>
+  
+  <Accordion title="倍率说明">
+    - **1倍率**：你用1M流量，后台即给你统计1M
+    - **4倍率**：你用1M流量，后台统计为4M
+    - 目前平台没有倍率限制
+  </Accordion>
+</AccordionGroup>
+
+### 节点选择建议
+
+<AccordionGroup>
+  <Accordion title="根据用途选择">
+    - **日常浏览**：选择延迟较低的普通节点
+    - **视频观看**：选择带宽较高的专线节点
+    - **游戏加速**：选择延迟最低的节点
+    - **下载文件**：选择带宽最高的节点
+  </Accordion>
+  
+  <Accordion title="根据地区选择">
+    - **亚洲用户**：优先选择香港、台湾、日本、韩国节点
+    - **欧美用户**：优先选择美国、欧洲节点
+    - **国内用户**：选择国内中转线路或香港节点
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 使用技巧
+
+### 提高连接稳定性
+
+<AccordionGroup>
+  <Accordion title="网络环境优化">
+    1. 使用稳定的网络环境
+    2. 避免在网络高峰期使用
+    3. 关闭不必要的网络应用
+    4. 定期重启路由器
+  </Accordion>
+  
+  <Accordion title="客户端设置">
+    1. 使用最新版本的客户端
+    2. 定期更新节点配置
+    3. 选择合适的代理模式
+    4. 避免频繁切换节点
+  </Accordion>
+</AccordionGroup>
+
+### 提高连接速度
+
+<AccordionGroup>
+  <Accordion title="节点选择">
+    1. 选择距离较近的节点
+    2. 选择负载较低的节点
+    3. 避免使用高倍率节点
+    4. 定期测试不同节点的速度
+  </Accordion>
+  
+  <Accordion title="网络优化">
+    1. 使用有线网络连接
+    2. 关闭其他占用带宽的应用
+    3. 选择合适的DNS服务器
+    4. 定期清理网络缓存
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 常见使用问题
+
+### 连接问题
+
+<AccordionGroup>
+  <Accordion title="无法连接">
+    可能原因：
+    1. 网络连接问题
+    2. 账号或套餐问题
+    3. 客户端配置错误
+    4. 节点暂时不可用
+    
+    解决方法：
+    1. 检查网络连接
+    2. 确认账号状态
+    3. 更新节点配置
+    4. 尝试其他节点
+  </Accordion>
+  
+  <Accordion title="连接不稳定">
+    可能原因：
+    1. 网络环境不稳定
+    2. 节点负载过高
+    3. 客户端设置问题
+    
+    解决方法：
+    1. 更换网络环境
+    2. 选择负载较低的节点
+    3. 调整客户端设置
+  </Accordion>
+</AccordionGroup>
+
+### 速度问题
+
+<AccordionGroup>
+  <Accordion title="速度慢">
+    可能原因：
+    1. 节点负载过高
+    2. 网络环境不佳
+    3. 选择了高倍率节点
+    
+    解决方法：
+    1. 更换其他节点
+    2. 检查本地网络
+    3. 选择低倍率节点
+  </Accordion>
+  
+  <Accordion title="速度不稳定">
+    可能原因：
+    1. 网络波动
+    2. 节点质量不稳定
+    3. 客户端设置问题
+    
+    解决方法：
+    1. 等待网络稳定
+    2. 更换更稳定的节点
+    3. 调整客户端设置
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 特殊使用场景
+
+### 回国线路
+
+<AccordionGroup>
+  <Accordion title="回国线路说明">
+    目前平台不提供回国线路：
+    - 回国线路约束条件较多
+    - 风险较大
+    - 不建议使用 CrowVPN 作为回国线路
+  </Accordion>
+</AccordionGroup>
+
+### 合租使用
+
+<AccordionGroup>
+  <Accordion title="合租注意事项">
+    可以找人合租共用 CrowVPN 服务，但需要注意：
+    - 需要你个人约束下这个合租人的权益
+    - 平台因为违规操作将你账号被禁止，后果自负
+    - 建议与信任的朋友合租
+    - 明确责任和义务
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 技术支持
+
+如果遇到使用相关问题，请联系技术支持：
+
+<CardGroup cols={2}>
+  <Card title="邮箱支持" icon="envelope">
+    发送邮件至 support@crowvpn.com
+  </Card>
+  <Card title="用户面板" icon="user">
+    登录用户面板提交工单
+  </Card>
+</CardGroup>

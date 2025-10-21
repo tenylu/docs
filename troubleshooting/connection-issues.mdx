@@ -1,0 +1,222 @@
+---
+title: "连接问题处理"
+description: "解决 CrowVPN 连接问题的完整指南"
+---
+
+## 常见连接问题
+
+遇到不可连接、无法上网时，请按照以下步骤排查：
+
+<Steps>
+  <Step title="检查网络连接">
+    确保设备已连接到互联网，可以正常访问其他网站
+  </Step>
+  <Step title="检查账号状态">
+    登录用户面板确认账号是否正常，套餐是否有效
+  </Step>
+  <Step title="更新节点配置">
+    尝试更新节点配置，获取最新的服务器信息
+  </Step>
+  <Step title="更换节点">
+    如果当前节点无法连接，尝试切换到其他节点
+  </Step>
+  <Step title="检查客户端设置">
+    确认客户端配置正确，代理模式已开启
+  </Step>
+</Steps>
+
+---
+
+## 详细排查步骤
+
+### 1. 检查网络连接
+
+<AccordionGroup>
+  <Accordion title="基础网络检查">
+    1. 打开浏览器，访问 [www.google.com](https://www.google.com)
+    2. 如果无法访问，说明网络连接有问题
+    3. 尝试重启路由器或更换网络环境
+  </Accordion>
+  
+  <Accordion title="DNS 设置检查">
+    1. 尝试更换 DNS 服务器为 8.8.8.8 或 1.1.1.1
+    2. 清除 DNS 缓存：
+       - Windows: `ipconfig /flushdns`
+       - macOS: `sudo dscacheutil -flushcache`
+       - Linux: `sudo systemctl restart systemd-resolved`
+  </Accordion>
+</AccordionGroup>
+
+### 2. 检查账号和套餐状态
+
+<AccordionGroup>
+  <Accordion title="登录用户面板">
+    1. 访问 [用户面板](https://user.crowmesh.com)
+    2. 使用正确的账号密码登录
+    3. 检查账号状态是否正常
+  </Accordion>
+  
+  <Accordion title="检查套餐信息">
+    1. 在用户面板查看套餐状态
+    2. 确认套餐未过期
+    3. 检查流量是否还有剩余
+    4. 确认连接数未超限
+  </Accordion>
+</AccordionGroup>
+
+### 3. 更新节点配置
+
+<AccordionGroup>
+  <Accordion title="手动更新配置">
+    1. 在客户端中找到配置更新选项
+    2. 点击更新按钮获取最新配置
+    3. 等待更新完成后重新连接
+  </Accordion>
+  
+  <Accordion title="重新添加配置">
+    1. 删除现有配置
+    2. 重新添加配置链接：
+       `https://user.crowmesh.com/api/v1/client/subscribe?token=YOUR_TOKEN`
+    3. 确保使用正确的域名 `user.crowmesh.com`
+  </Accordion>
+</AccordionGroup>
+
+### 4. 更换节点
+
+<AccordionGroup>
+  <Accordion title="选择其他节点">
+    1. 在客户端中查看可用节点列表
+    2. 尝试选择不同地区的节点
+    3. 优先选择延迟较低的节点
+  </Accordion>
+  
+  <Accordion title="节点类型说明">
+    - **NM**：普通线路，适合日常使用
+    - **IPLC**：专线线路，速度更快
+    - **BGP**：电信优化线路
+    - **专线**：独享网速，性能最佳
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 平台特定问题
+
+### Windows 平台
+
+<AccordionGroup>
+  <Accordion title="Clash for Windows">
+    - 检查系统代理是否已开启
+    - 确认 Proxy 开关已打开
+    - 尝试重启 Clash 客户端
+  </Accordion>
+  
+  <Accordion title="防火墙设置">
+    - 将 Clash 添加到防火墙例外
+    - 临时关闭防火墙测试连接
+  </Accordion>
+</AccordionGroup>
+
+### macOS 平台
+
+<AccordionGroup>
+  <Accordion title="ClashX">
+    - 检查"设置为系统代理"是否开启
+    - 确认配置已正确加载
+    - 尝试重启 ClashX
+  </Accordion>
+  
+  <Accordion title="系统权限">
+    - 确保应用有网络访问权限
+    - 检查系统偏好设置中的安全设置
+  </Accordion>
+</AccordionGroup>
+
+### iOS 平台
+
+<AccordionGroup>
+  <Accordion title="Shadowrocket">
+    - 检查总开关是否已开启
+    - 确认配置已正确导入
+    - 尝试重新导入配置
+  </Accordion>
+  
+  <Accordion title="网络权限">
+    - 确保应用有网络访问权限
+    - 检查 VPN 配置是否正确
+  </Accordion>
+</AccordionGroup>
+
+### Android 平台
+
+<AccordionGroup>
+  <Accordion title="Clash for Android">
+    - 检查代理开关是否已开启
+    - 确认配置已正确加载
+    - 尝试重启应用
+  </Accordion>
+  
+  <Accordion title="省电优化">
+    - 将应用加入白名单
+    - 关闭省电优化
+    - 确保应用在后台运行
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 高级排查
+
+### 网络诊断
+
+<AccordionGroup>
+  <Accordion title="Ping 测试">
+    1. 打开命令提示符或终端
+    2. 执行 `ping 8.8.8.8` 测试网络连通性
+    3. 如果 ping 不通，说明网络有问题
+  </Accordion>
+  
+  <Accordion title="Traceroute 测试">
+    1. 执行 `tracert 8.8.8.8`（Windows）或 `traceroute 8.8.8.8`（macOS/Linux）
+    2. 查看网络路径是否正常
+  </Accordion>
+</AccordionGroup>
+
+### 客户端日志
+
+<AccordionGroup>
+  <Accordion title="查看日志">
+    1. 在客户端中找到日志或错误信息
+    2. 查看具体的错误描述
+    3. 根据错误信息进行相应处理
+  </Accordion>
+  
+  <Accordion title="常见错误">
+    - **连接超时**：尝试更换节点
+    - **认证失败**：检查账号密码
+    - **配置错误**：重新更新配置
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 联系技术支持
+
+如果以上方法都无法解决问题，请联系技术支持：
+
+<CardGroup cols={2}>
+  <Card title="邮箱支持" icon="envelope">
+    发送邮件至 support@crowvpn.com，详细描述问题
+  </Card>
+  <Card title="用户面板" icon="user">
+    登录用户面板提交工单，获得专业支持
+  </Card>
+</CardGroup>
+
+<Info>
+  联系技术支持时，请提供以下信息：
+  - 使用的客户端和版本
+  - 具体的错误信息
+  - 问题发生的具体时间
+  - 已尝试的解决方法
+</Info>

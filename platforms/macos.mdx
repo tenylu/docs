@@ -1,0 +1,100 @@
+---
+title: "macOS 使用教程"
+description: "CrowVPN macOS 平台配置和使用指南"
+---
+
+## ClashX
+
+### 下载 ClashX
+
+下载 ClashX 软件 > 备用下载地址 >
+
+打开下载完成的 dmg 映像文件，将 ClashX 添加到应用程序文件夹中。
+
+![下载 ClashX](/images/clashx-config-1.webp)
+
+<Warning>
+  确认电脑时间是否正确同步北京时间：查看时间 偏差1分钟都会无法连接。
+</Warning>
+
+### 打开 ClashX
+
+打开后，点击安装，软件需要安装 VPN 设置到您的系统。然后提示输入电脑密码即可。
+
+![打开 ClashX](/images/clashx-config-2.webp)
+
+<Warning>
+  **注意事项：**
+  
+  发现打不开 ClashX，请检查右侧顶部菜单栏图标是不是被占满了，需要关闭占满的软件就会出现。
+  
+  如无以上问题，请联系专家处理
+</Warning>
+
+### 添加 Clash 配置订阅
+
+前往官网进入用户管理的首页点击（我的套餐概况）右上角【一键配置】。
+
+一键配置失败，才选择手动配置；
+
+> 禁止使用微信来开启网页，否则无法跳转一键配置
+
+![添加 Clash 配置订阅](/images/clashx-config-3.webp)
+
+<AccordionGroup>
+  <Accordion title="一键配置">
+    点击【一键配置】，出现弹窗，点击【Clash 开启】。点击后出现托管的配置文件窗口，直接点击【确定】即可。
+    
+    ![ClashX 一键配置](/images/clashx-config-4.webp)
+  </Accordion>
+  
+  <Accordion title="手动配置">
+    点击【复制订阅链接】，打开 Clash，点击菜单栏中的 Clash 图标打开菜单，进入 配置 > 托管配置 > 管理。
+    
+    ![ClashX 手动配置步骤](/images/clashx-config-4.webp)
+    
+    点击后出现托管的配置文件窗口，点击 "添加" 在 Url 一栏中输入 Clash 配置订阅链接，Config Name 为配置文件名，可以随意填写或留空。
+    
+    ![ClashX 手动配置](/images/clashx-config-5.webp)
+    
+    ### 添加成功
+    
+    添加成功后 ClashX 会自动从链接下载配置文件，等待 "更新时间" 刷新后，即可关闭窗口。
+  </Accordion>
+</AccordionGroup>
+
+### 设置为系统代理
+
+打开 ClashX 菜单中的 "设置为系统代理"，ClashX 便可以开始出国了。
+
+![ClashX 设置为系统代理](/images/clashx-config-6.webp)
+
+<Info>
+  ClashX 的默认出站模式为 "**规则**"，不推荐选择 "全局" 与 "直连"。
+</Info>
+
+### 确定出国
+
+您可以先试一下浏览器打开 Youtube，确认已经成功连接。
+
+发现无法打开 youtube 等网站，请看查阅帮助中心问题解决。
+
+<Info>
+  请使用 Chrome、Firefox、Safari 等国外浏览器。
+  禁止使用 360、QQ 等国内浏览器（存在流量监控）。
+</Info>
+
+---
+
+## 技术支持
+
+如果遇到其他问题，请联系技术支持：
+
+<CardGroup cols={2}>
+  <Card title="邮箱支持" icon="envelope">
+    发送邮件至 support@crowvpn.com
+  </Card>
+  <Card title="用户面板" icon="user">
+    登录用户面板提交工单
+  </Card>
+</CardGroup>
