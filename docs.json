@@ -1,20 +1,23 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "CrowvpnDocs",
+  "name": "CrowMeshDocs",
   "colors": {
     "primary": "#FA254A",
     "light": "#FF4566",
     "dark": "#DF2545"
   },
   "favicon": "/favicon.svg",
+  "integrations": {
+    "gtm": { "tagId": "GTM-KMW357TW" }
+  },
   "navigation": {
     "tabs": [
       {
         "tab": "Guides",
         "groups": [
           {
-            "group": "入门指南",
+            "group": "Getting started",
             "pages": [
               "index",
               "quickstart",
@@ -102,15 +105,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
