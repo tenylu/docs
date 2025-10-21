@@ -8,9 +8,6 @@
     "dark": "#DF2545"
   },
   "favicon": "/favicon.svg",
-  "integrations": {
-    "gtm": { "tagId": "GTM-KMW357TW" }
-  },
   "navigation": {
     "tabs": [
       {
