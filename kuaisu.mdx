@@ -4,90 +4,87 @@ title: "重新配置快速解决办法"
 
 ### 为什么要重新配置？
 
-平台节点会被GFW大数据封堵，直接把配置请求服务器ip 墙了，所以无法请求更新，需要更换链接解决。
+平台节点会被 GFW 大数据封堵，导致请求服务器 IP 被墙，无法拉取更新。请按下述方法 **更换配置链接的域名** 解决。
+
+> 将原链接中的域名 `cdn.niudache.com` 替换为 `user.crowmesh.com`，其余路径保持不变\
+> 例如：`https://cdn.niudache.com/api/v1/...` → `https://user.crowmesh.com/api/v1/...`
 
 ---
 
 ### 选择需要重新配置的客户端
 
-| ![1280X1280.PNG](/images/1280X1280.PNG) | ![1280X1280 (1).PNG](/images/1280X1280\(1\).PNG) | ![1280X1280 (2).PNG](/images/1280X1280\(2\).PNG) | ![1280X1280 (3).PNG](/images/1280X1280\(3\).PNG) |
-| :-------------------------------------: | :----------------------------------------------: | :----------------------------------------------: | :----------------------------------------------: |
-| [MacOS](macos)                          | Windows                                          | iPhone/iPad                                      | Android                                          |
+- [macOS（ClashX）](macos)
+- [Windows（Clash for Windows）](windows)
+- [iPhone / iPad（Shadowrocket / 小火箭）](ios)
+- [Android（Clash for Android）](android)
 
 ---
 
-## <Tooltip tip="macos">MacOS解决方法</Tooltip>
+## <Tooltip tip="macos">macOS 解决方法（ClashX）</Tooltip>
 
-打开 ClashX
-
-1.关闭设置为系统代理 -\> 2.选择 配置-托管配置-管理
+1. 打开 **ClashX**。
+2. 关闭 **设置为系统代理**。
+3. 依次进入：**配置 → 托管配置 → 管理**。
 
 ![1280X1280 (4).PNG](/images/1280X1280\(4\).PNG)
 
-3.编辑链接 -\> 4. 修改链接地址为 { [<u>https://user.crowmesh.com</u>](https://user.crowmesh.com)<u> </u>} /api/v1.... .
+4. **编辑链接**，将链接中的域名改为 `user.crowmesh.com`（路径 `/api/v1/...` 保持不变）。
 
 <Warning>
-  原来 cdn.niudache.com 地址 改为 **<u>user.crowmesh.com</u>**
+  将原域名 `cdn.niudache.com` 改为 `user.crowmesh.com`
 </Warning>
 
 ![1280X1280 (5).PNG](/images/1280X1280\(5\).PNG)
 
-确定后，重新打开 设置为系统代理 就可以用了
+确认保存后，重新开启 **设置为系统代理**。
 
 ---
 
-## Windows 解决方法
+## <Tooltip tip="windows">Windows 解决方法（Clash for Windows）</Tooltip>
 
-打开 Clash for windows
-
- 1.选择General -\> 关闭 Proxy开关
+1. 打开 **Clash for Windows**。
+2. 在 **General** 里先关闭 **Proxy** 开关。
+3. 打开 **Profiles**，选中 **CrowVPN** 配置，右键列表选择 **Settings**（设置）。
 
 ![1280X1280 (6).PNG](/images/1280X1280\(6\).PNG)
 
-2.选择ProFiles -\> 选择CrowVPN配置-\> 右键列表选择设置
-
-3.. 修改URL 链接地址为 { <u>https://user.crowmesh.com</u> } /api/v1.... .
+4. 在 **URL** 中把域名改为 `user.crowmesh.com`（路径 `/api/v1/...` 保持不变）。
 
 <Warning>
-  原来 cdn.niudache.com 地址 改为 **<u>user.crowmesh.com</u>**
+  将原域名 `cdn.niudache.com` 改为 **`user.crowmesh.com`**
 </Warning>
 
-![07a9d475-31f5-41ba-b0bd-3082f28090ad.png](/images/07a9d475-31f5-41ba-b0bd-3082f28090ad.png)
+![Clash for Windows](/images/07a9d475-31f5-41ba-b0bd-3082f28090ad.png)
 
-OK 后，重新打开 打开Proxy开关 就可以用了
+5. 点击 **OK** 保存后，回到 **General** 重新打开 **Proxy** 开关。
 
 ---
 
-## iPhone/iPad 解决方法
+## <Tooltip tip="ios">iPhone / iPad 解决方法（Shadowrocket / 小火箭）</Tooltip>
 
-打开 Shadowrocket (小火箭)
-
- 1.关闭开关 -\> 选择 CrowVPN的 叹号图标
-
-2. 修改URL链接地址为 { <u>https://user.crowmesh.com</u> } /api/v1.... .
+1. 打开 **Shadowrocket**，先关闭顶部总开关。
+2. 选择 **CrowVPN** 的 **叹号（详情）** 图标。
+3. 将 **URL** 中的域名改为 `user.crowmesh.com`（路径 `/api/v1/...` 保持不变）。
+4. 保存后，重新打开总开关。
 
 <Warning>
-  原来 cdn.niudache.com 地址 改为 **<u>user.crowmesh.com</u>**
+  将原域名 `cdn.niudache.com` 改为 **`user.crowmesh.com`**
 </Warning>
 
-![227f243c-2b71-4fc6-b1f3-ddf0a4b604ca.png](/images/227f243c-2b71-4fc6-b1f3-ddf0a4b604ca.png)
-
-保存后，重新打开 开关 就可以用了
+![Shadowrocket](/images/227f243c-2b71-4fc6-b1f3-ddf0a4b604ca.png)
 
 ---
 
-## Android 解决方法
+## <Tooltip tip="android">Android 解决方法（Clash for Android）</Tooltip>
 
-打开Clash for Andorid
-
- 1.暂停代理 -\> 2.选择 配置 -\> 3.点击CrowVPN后面三个点 -\> 4.编辑
-
-修改URL链接地址为 { <u>https://user.crowmesh.com</u> } /api/v1.... .
+1. 打开 **Clash for Android**，先 **暂停代理**。
+2. 进入 **配置（Profiles）**。
+3. 在 **CrowVPN** 条目右侧点击 **更多（⋮） → 编辑（Edit）**。
+4. 将 **URL** 中的域名改为 `user.crowmesh.com`（路径 `/api/v1/...` 保持不变）。
+5. 保存后，重新打开代理开关。
 
 <Warning>
-  原来 cdn.niudache.com 地址 改为 **<u>user.crowmesh.com</u>**
+  将原域名 `cdn.niudache.com` 改为 **`user.crowmesh.com`**
 </Warning>
 
-![9f0c7839-d16b-4e19-b0d9-17251d584c80.png](/images/9f0c7839-d16b-4e19-b0d9-17251d584c80.png)
-
-保存后，重新打开 开关 就可以用了
+![Clash for Android](/images/9f0c7839-d16b-4e19-b0d9-17251d584c80.png)
