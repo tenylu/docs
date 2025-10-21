@@ -8,16 +8,13 @@
     "dark": "#DF2545"
   },
   "favicon": "/favicon.svg",
-  "integrations": {
-    "gtm": { "tagId": "GTM-KMW357TW" }
-  },
   "navigation": {
     "tabs": [
       {
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "入门指南",
             "pages": [
               "index",
               "quickstart",
@@ -105,15 +102,15 @@
   },
   "contextual": {
     "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
+     "copy",
+     "view",
+     "chatgpt",
+     "claude",
+     "perplexity",
+     "mcp",
+     "cursor",
+     "vscode"
+   ]
   },
   "footer": {
     "socials": {
