@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "使用手册",
+        "tab": "快速配置",
         "groups": [
           {
             "group": "快速开始",
@@ -48,9 +48,14 @@
               "platforms/windows",
               "troubleshooting/windows-update-nodes"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "FAQ",
+        "groups": [
           {
-            "group": "FAQ",
+            "group": "常见问题",
             "pages": [
               "faq/registration",
               "faq/plans",
@@ -81,10 +86,6 @@
       {
         "label": "官网",
         "href": "https://crowvpn.com"
-      },
-      {
-        "label": "用户面板",
-        "href": "https://user.crowmesh.com"
       }
     ],
     "primary": {
