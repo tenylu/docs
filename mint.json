@@ -1,0 +1,73 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "CrowVPN 使用教程",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#FA254A",
+    "light": "#FF4566",
+    "dark": "#DF2545"
+  },
+  "navigation": [
+    {
+      "group": "快速开始",
+      "pages": [
+        "login",
+        "index",
+        "kuaisu",
+        "test"
+      ]
+    },
+    {
+      "group": "iPhone / iPad",
+      "pages": [
+        "platforms/ios",
+        "platforms/appleid-switch",
+        "troubleshooting/ios-update-nodes"
+      ]
+    },
+    {
+      "group": "Android / 安卓",
+      "pages": [
+        "platforms/android",
+        "troubleshooting/android-update-nodes"
+      ]
+    },
+    {
+      "group": "macOS / 苹果电脑",
+      "pages": [
+        "platforms/macos",
+        "troubleshooting/macos-update-nodes"
+      ]
+    },
+    {
+      "group": "Windows / PC电脑",
+      "pages": [
+        "platforms/windows",
+        "troubleshooting/windows-update-nodes"
+      ]
+    },
+    {
+      "group": "FAQ",
+      "pages": [
+        "faq/registration",
+        "faq/plans",
+        "faq/usage",
+        "faq/account-issues",
+        "faq/tiktok-usage",
+        "faq/other-issues"
+      ]
+    },
+    {
+      "group": "问题解决",
+      "pages": [
+        "troubleshooting/connection-issues",
+        "troubleshooting/update-nodes",
+        "troubleshooting/check-account"
+      ]
+    }
+  ]
+}
