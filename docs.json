@@ -21,6 +21,15 @@
             ]
           },
           {
+            "group": "官方客户端",
+            "pages": [
+              "client/about",
+              "client/mac-download",
+              "client/windows-download",
+              "client/faq"
+            ]
+          },
+          {
             "group": "iPhone / iPad",
             "pages": [
               "platforms/ios",
@@ -86,6 +95,10 @@
       {
         "label": "官网",
         "href": "https://crowvpn.com"
+      },
+      {
+        "label": "下载",
+        "href": "https://crowvpn.com/download.php"
       }
     ],
     "primary": {
