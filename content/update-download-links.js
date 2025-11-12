@@ -41,12 +41,15 @@
     const newUrl = buildDownloadUrl(version, platform, arch);
     if (!newUrl) return;
 
-    // 尝试更新 Card 组件的 href 属性
-    if (element.href !== undefined) {
+    // Mintlify 的 Card 组件可能将链接放在不同的位置
+    // 尝试多种方式更新链接
+    
+    // 1. 如果元素本身是链接
+    if (element.tagName === 'A' && element.href) {
       element.href = newUrl;
     }
-
-    // 查找 Card 内部的所有链接
+    
+    // 2. 查找元素内部的所有链接
     const links = element.querySelectorAll('a');
     links.forEach(function(link) {
       if (link.href && (
@@ -55,8 +58,41 @@
         link.href.includes('crowvpn-windows')
       )) {
         link.href = newUrl;
+        // 也更新 data-href 属性（如果存在）
+        if (link.hasAttribute('data-href')) {
+          link.setAttribute('data-href', newUrl);
+        }
       }
     });
+    
+    // 3. 查找父元素中的链接（Card 组件可能将链接放在父级）
+    let parent = element.parentElement;
+    while (parent && parent !== document.body) {
+      const parentLinks = parent.querySelectorAll('a');
+      parentLinks.forEach(function(link) {
+        if (link.href && (
+          link.href.includes('crowvpn-apple') ||
+          link.href.includes('crowvpn-intel') ||
+          link.href.includes('crowvpn-windows')
+        )) {
+          link.href = newUrl;
+        }
+      });
+      parent = parent.parentElement;
+    }
+    
+    // 4. 尝试通过 ID 查找对应的链接
+    const elementId = element.getAttribute('id');
+    if (elementId) {
+      const idLinks = document.querySelectorAll('a[href*="crowvpn"]');
+      idLinks.forEach(function(link) {
+        const linkParent = link.closest('[id="' + elementId + '"]') || 
+                          link.closest('[data-platform="' + platform + '"][data-arch="' + arch + '"]');
+        if (linkParent) {
+          link.href = newUrl;
+        }
+      });
+    }
   }
 
   // 从 latest.yml 获取最新版本并更新链接
@@ -83,11 +119,29 @@
       // 更新所有带有 data-platform 和 data-arch 属性的元素
       const elements = document.querySelectorAll('[data-platform][data-arch]');
       
-      elements.forEach(function(element) {
-        const platform = element.getAttribute('data-platform');
-        const arch = element.getAttribute('data-arch');
-        updateLink(element, version, platform, arch);
-      });
+      if (elements.length === 0) {
+        console.warn('未找到带有 data-platform 和 data-arch 属性的元素，尝试其他方式查找');
+        // 备用方案：直接查找所有包含 crowvpn 的链接
+        const allLinks = document.querySelectorAll('a[href*="crowvpn"]');
+        allLinks.forEach(function(link) {
+          const href = link.href;
+          if (href.includes('crowvpn-apple-')) {
+            link.href = buildDownloadUrl(version, 'macos', 'apple');
+          } else if (href.includes('crowvpn-intel-')) {
+            link.href = buildDownloadUrl(version, 'macos', 'intel');
+          } else if (href.includes('crowvpn-windows-') && href.includes('-x64-')) {
+            link.href = buildDownloadUrl(version, 'windows', 'x64');
+          } else if (href.includes('crowvpn-windows-') && href.includes('-arm64-')) {
+            link.href = buildDownloadUrl(version, 'windows', 'arm64');
+          }
+        });
+      } else {
+        elements.forEach(function(element) {
+          const platform = element.getAttribute('data-platform');
+          const arch = element.getAttribute('data-arch');
+          updateLink(element, version, platform, arch);
+        });
+      }
       
     } catch (error) {
       console.warn('更新下载链接时出错:', error);
@@ -96,30 +150,53 @@
 
   // 页面加载完成后执行
   function init() {
-    // 等待 DOM 完全加载
+    // 多次尝试更新，因为 Mintlify 的组件可能延迟渲染
+    function tryUpdate() {
+      updateDownloadLinks();
+    }
+    
+    // 立即尝试一次
+    tryUpdate();
+    
+    // DOM 加载完成后尝试
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', function() {
-        // 延迟执行，确保 Mintlify 的 Card 组件已渲染
-        setTimeout(updateDownloadLinks, 1000);
+        setTimeout(tryUpdate, 500);
+        setTimeout(tryUpdate, 1000);
+        setTimeout(tryUpdate, 2000);
       });
     } else {
-      // DOM 已经加载完成，延迟执行
-      setTimeout(updateDownloadLinks, 1000);
+      setTimeout(tryUpdate, 500);
+      setTimeout(tryUpdate, 1000);
+      setTimeout(tryUpdate, 2000);
     }
     
     // 使用 MutationObserver 监听 DOM 变化
     const observer = new MutationObserver(function(mutations, obs) {
-      const hasDownloadLinks = document.querySelectorAll('[data-platform][data-arch]').length > 0;
+      const hasDownloadLinks = document.querySelectorAll('[data-platform][data-arch]').length > 0 ||
+                               document.querySelectorAll('a[href*="crowvpn"]').length > 0;
       if (hasDownloadLinks) {
-        updateDownloadLinks();
+        setTimeout(tryUpdate, 100);
       }
     });
     
     // 开始观察
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true
-    });
+    if (document.body) {
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+    } else {
+      // 如果 body 还不存在，等待它创建
+      setTimeout(function() {
+        if (document.body) {
+          observer.observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        }
+      }, 100);
+    }
   }
 
   // 初始化

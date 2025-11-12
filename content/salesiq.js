@@ -10,3 +10,13 @@ $zoho.salesiq = $zoho.salesiq || { ready: function () { } };
     s.defer = true;
     (document.body || document.head).appendChild(s);
 })();
+
+// 加载下载链接更新脚本
+(function () {
+    if (document.getElementById('update-download-links-script')) return;
+    var s = document.createElement('script');
+    s.id = 'update-download-links-script';
+    s.src = '/content/update-download-links.js';
+    s.defer = true;
+    (document.body || document.head).appendChild(s);
+})();
