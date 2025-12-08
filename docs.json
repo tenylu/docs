@@ -26,6 +26,7 @@
               "client/about",
               "client/mac-download",
               "client/windows-download",
+              "client/android-download",
               "client/faq"
             ]
           },
