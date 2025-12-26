@@ -41,7 +41,7 @@
 
 `latest.yml` 文件格式：
 ```yaml
-version: 2.0.2
+version: 2.1.0
 release_date: 2025-11-12
 changelog: |
   1、修复登录失败问题
@@ -49,10 +49,10 @@ changelog: |
 ```
 
 脚本会自动构建下载链接：
-- macOS Apple: `https://cloud.crowmesh.com/crowvpn-apple-2.0.2.dmg`
-- macOS Intel: `https://cloud.crowmesh.com/crowvpn-intel-2.0.2.dmg`
-- Windows x64: `https://cloud.crowmesh.com/crowvpn-windows-2.0.2-x64-setup.exe`
-- Windows Arm64: `https://cloud.crowmesh.com/crowvpn-windows-2.0.2-arm64-setup.exe`
+- macOS Apple: `https://cloud.crowmesh.com/crowvpn-apple-2.1.0.dmg`
+- macOS Intel: `https://cloud.crowmesh.com/crowvpn-intel-2.1.0.dmg`
+- Windows x64: `https://cloud.crowmesh.com/crowvpn-windows-2.1.0-x64-setup.exe`
+- Windows Arm64: `https://cloud.crowmesh.com/crowvpn-windows-2.1.0-arm64-setup.exe`
 
 ---
 
@@ -70,13 +70,13 @@ changelog: |
    ```
    /path/to/downloads/
    ├── crowvpn-apple-2.0.1.dmg
-   ├── crowvpn-apple-2.0.2.dmg  (新版本)
+   ├── crowvpn-apple-2.1.0.dmg  (新版本)
    ├── crowvpn-intel-2.0.1.dmg
-   ├── crowvpn-intel-2.0.2.dmg  (新版本)
+   ├── crowvpn-intel-2.1.0.dmg  (新版本)
    ├── crowvpn-windows-2.0.1-x64-setup.exe
-   ├── crowvpn-windows-2.0.2-x64-setup.exe  (新版本)
+   ├── crowvpn-windows-2.1.0-x64-setup.exe  (新版本)
    ├── crowvpn-windows-2.0.1-arm64-setup.exe
-   └── crowvpn-windows-2.0.2-arm64-setup.exe  (新版本)
+   └── crowvpn-windows-2.1.0-arm64-setup.exe  (新版本)
    ```
 
 2. **创建符号链接**
@@ -87,12 +87,12 @@ changelog: |
    cd /path/to/downloads/
    
    # 创建 macOS 符号链接
-   ln -sf crowvpn-apple-2.0.2.dmg crowvpn-apple-latest.dmg
-   ln -sf crowvpn-intel-2.0.2.dmg crowvpn-intel-latest.dmg
+   ln -sf crowvpn-apple-2.1.0.dmg crowvpn-apple-latest.dmg
+   ln -sf crowvpn-intel-2.1.0.dmg crowvpn-intel-latest.dmg
    
    # 创建 Windows 符号链接
-   ln -sf crowvpn-windows-2.0.2-x64-setup.exe crowvpn-windows-latest-x64-setup.exe
-   ln -sf crowvpn-windows-2.0.2-arm64-setup.exe crowvpn-windows-latest-arm64-setup.exe
+   ln -sf crowvpn-windows-2.1.0-x64-setup.exe crowvpn-windows-latest-x64-setup.exe
+   ln -sf crowvpn-windows-2.1.0-arm64-setup.exe crowvpn-windows-latest-arm64-setup.exe
    ```
 
 3. **配置 Web 服务器**
@@ -147,26 +147,26 @@ changelog: |
    {
      "macos": {
        "apple": {
-         "version": "2.0.2",
-         "filename": "crowvpn-apple-2.0.2.dmg",
-         "url": "https://cloud.crowmesh.com/crowvpn-apple-2.0.2.dmg"
+         "version": "2.1.0",
+         "filename": "crowvpn-apple-2.1.0.dmg",
+         "url": "https://cloud.crowmesh.com/crowvpn-apple-2.1.0.dmg"
        },
        "intel": {
-         "version": "2.0.2",
-         "filename": "crowvpn-intel-2.0.2.dmg",
-         "url": "https://cloud.crowmesh.com/crowvpn-intel-2.0.2.dmg"
+         "version": "2.1.0",
+         "filename": "crowvpn-intel-2.1.0.dmg",
+         "url": "https://cloud.crowmesh.com/crowvpn-intel-2.1.0.dmg"
        }
      },
      "windows": {
        "x64": {
-         "version": "2.0.2",
-         "filename": "crowvpn-windows-2.0.2-x64-setup.exe",
-         "url": "https://cloud.crowmesh.com/crowvpn-windows-2.0.2-x64-setup.exe"
+         "version": "2.1.0",
+         "filename": "crowvpn-windows-2.1.0-x64-setup.exe",
+         "url": "https://cloud.crowmesh.com/crowvpn-windows-2.1.0-x64-setup.exe"
        },
        "arm64": {
-         "version": "2.0.2",
-         "filename": "crowvpn-windows-2.0.2-arm64-setup.exe",
-         "url": "https://cloud.crowmesh.com/crowvpn-windows-2.0.2-arm64-setup.exe"
+         "version": "2.1.0",
+         "filename": "crowvpn-windows-2.1.0-arm64-setup.exe",
+         "url": "https://cloud.crowmesh.com/crowvpn-windows-2.1.0-arm64-setup.exe"
        }
      }
    }

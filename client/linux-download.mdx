@@ -1,0 +1,136 @@
+---
+title: "Linux 客户端下载"
+description: "CrowVPN Linux 官方客户端下载"
+---
+
+## Linux 客户端
+
+CrowVPN Linux 客户端提供简洁易用的界面，支持多种 Linux 发行版和架构。
+
+---
+
+### 下载安装包
+
+<CardGroup cols={2}>
+  <Card title="amd64 版本" icon="server" href="https://cloud.crowmesh.com/crowvpn-linux-2.1.0-amd64.deb">
+    适用于 amd64 架构 Linux 系统（Debian/Ubuntu）
+  </Card>
+  <Card title="arm64 版本" icon="server" href="https://cloud.crowmesh.com/crowvpn-linux-2.1.0-arm64.deb">
+    适用于 arm64 架构 Linux 系统（Debian/Ubuntu）
+  </Card>
+  <Card title="x86_64 版本" icon="server" href="https://cloud.crowmesh.com/crowvpn-linux-2.1.0-x86_64.rpm">
+    适用于 x86_64 架构 Linux 系统（RHEL/CentOS/Fedora）
+  </Card>
+  <Card title="aarch64 版本" icon="server" href="https://cloud.crowmesh.com/crowvpn-linux-2.1.0-aarch64.rpm">
+    适用于 aarch64 架构 Linux 系统（RHEL/CentOS/Fedora）
+  </Card>
+</CardGroup>
+
+---
+
+### 安装说明
+
+#### DEB 包安装方式（amd64、arm64）
+
+适用于 Debian、Ubuntu 等基于 Debian 的发行版：
+
+1. 下载 DEB 安装包
+
+2. 使用 dpkg 安装：
+   ```bash
+   sudo dpkg -i crowvpn-linux-2.1.0-*.deb
+   ```
+
+3. 如果遇到依赖问题，运行：
+   ```bash
+   sudo apt-get install -f
+   ```
+
+#### RPM 包安装方式（x86_64、aarch64）
+
+适用于 RHEL、CentOS、Fedora 等基于 RPM 的发行版：
+
+1. 下载 RPM 安装包
+
+2. 使用 rpm 或 dnf/yum 安装：
+   ```bash
+   # 使用 rpm 安装
+   sudo rpm -i crowvpn-linux-2.1.0-*.rpm
+   
+   # 或使用 dnf/yum 安装（推荐）
+   sudo dnf install crowvpn-linux-2.1.0-*.rpm
+   # 或
+   sudo yum install crowvpn-linux-2.1.0-*.rpm
+   ```
+
+#### 系统要求
+
+- Linux 内核 3.10 或更高版本
+- glibc 2.17 或更高版本
+- **DEB 包**：Ubuntu 18.04+, Debian 9+ 等
+- **RPM 包**：RHEL 7+, CentOS 7+, Fedora 28+ 等
+
+<Info>
+  请根据您的系统架构和发行版选择对应的安装包格式。DEB 包适用于 Debian/Ubuntu 系统，RPM 包适用于 RHEL/CentOS/Fedora 系统。
+</Info>
+
+---
+
+## 客户端功能
+
+CrowVPN Linux 客户端提供丰富的功能，为您带来便捷的使用体验：
+
+<CardGroup cols={3}>
+  <Card title="支持更新" icon="refresh">
+    客户端自动检查更新，保持最新版本
+  </Card>
+  <Card title="在线客服" icon="message">
+    内置在线客服功能，随时获取帮助
+  </Card>
+  <Card title="白天黑夜切换" icon="moon">
+    支持主题切换，适配不同使用场景
+  </Card>
+  <Card title="多语言切换" icon="globe">
+    支持多种语言，满足不同用户需求
+  </Card>
+  <Card title="公告信息" icon="bell">
+    及时推送平台公告和重要通知
+  </Card>
+  <Card title="一键连接" icon="rocket">
+    快速连接，简单易用
+  </Card>
+  <Card title="免配置登录使用" icon="key">
+    登录后自动配置，无需手动设置
+  </Card>
+  <Card title="套餐信息" icon="credit-card">
+    实时查看套餐使用情况和流量统计
+  </Card>
+  <Card title="全新协议" icon="shield">
+    支持最新协议，安全稳定
+  </Card>
+  <Card title="自动节点" icon="server">
+    智能选择最优节点，自动切换
+  </Card>
+  <Card title="共享代理" icon="users">
+    支持代理共享，方便多设备使用
+  </Card>
+  <Card title="智能模式切换" icon="switch">
+    支持智能模式和全局模式切换
+  </Card>
+</CardGroup>
+
+---
+
+## 技术支持
+
+如果您在使用过程中遇到任何问题，请联系技术支持：
+
+<CardGroup cols={2}>
+  <Card title="联系技术" icon="message" href="https://salesiq.zohopublic.com/signaturesupport.ls?widgetcode=dbde6ec4b7a80e04beb5f35811b2e9df7b8d535222fe185d2d3b4d7f95fbeb0f">
+    点击联系在线客服
+  </Card>
+  <Card title="用户面板" icon="user" href="https://user.crowmesh.com">
+    登录用户面板查看账号状态
+  </Card>
+</CardGroup>
+
