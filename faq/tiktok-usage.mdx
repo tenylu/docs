@@ -1,101 +1,194 @@
 ---
 title: "TikTok 使用说明"
-description: "CrowVPN 使用 TikTok 的详细指南"
+description: "国内用户如何使用海外 TikTok 的详细指南"
 ---
 
 ## TikTok 使用指南
 
-### 为什么需要 CrowVPN 使用 TikTok？
+### 为什么 TikTok 拔卡也看不了？
 
-在中国大陆地区，TikTok 应用无法直接访问，需要使用 CrowVPN 等科学上网工具来访问 TikTok 服务。
+TikTok 在部分国家和地区因政策或技术限制而被封锁，导致许多用户无法正常使用。TikTok 会通过检测手机 SIM 卡的归属地信息来判断用户的地理位置，为了绕过这一检测，兴起了拔卡使用 TikTok 的方法。但也有不少人反映，拔卡后依然无法访问 TikTok。主要原因包括：
+
+<AccordionGroup>
+  <Accordion title="1. IP 地址检测">
+    即使拔卡，TikTok 仍可通过设备的 IP 地址确定用户位置。如果 IP 地址显示在受限地区，访问将被阻止。
+  </Accordion>
+  
+  <Accordion title="2. 系统设置检测">
+    TikTok 会检查设备的系统语言、地区设置和时区等信息。如果这些设置指向受限地区，可能导致无法使用。
+  </Accordion>
+  
+  <Accordion title="3. 设备指纹识别">
+    现代设备会生成独特的设备指纹，包括硬件信息、操作系统版本等。TikTok 可能会通过这些信息来识别用户的设备是否属于受限地区。
+  </Accordion>
+  
+  <Accordion title="4. 科学上网工具不稳定">
+    即使在科学上网环境中，连接的稳定性也是一个重要因素。如果 VPN 或代理服务器连接不稳定，或者节点选择不当，可能会导致 TikTok 无法正常加载内容。
+  </Accordion>
+  
+  <Accordion title="5. 账号限制">
+    某些 TikTok 账号可能已经被标记为受限地区账号，即使通过拔卡等方式也无法正常使用。
+  </Accordion>
+</AccordionGroup>
+
+### 解决方案
+
+<AccordionGroup>
+  <Accordion title="更改系统设置">
+    调整手机的时区和语言设置，使其符合目标地区的标准，关闭定位、跟踪等服务。
+  </Accordion>
+  
+  <Accordion title="使用稳定的科学上网工具">
+    选择可靠的 VPN 或代理服务，并确保连接稳定。选择节点时避开封锁地区，比如中国、印度等。另外，使用前最好用工具检测一下伪装度，建议达到 80% 以上比较好。
+  </Accordion>
+</AccordionGroup>
 
 ---
 
-## 配置步骤
+## 国内如何使用 TikTok？
 
-### 1. 确保 CrowVPN 连接正常
+### 1. 网页端直接使用 TikTok
+
+网页端刷 TikTok 是一个简便的替代方案，完美解决 SIM 卡检测的问题，只需要一个稳定的科学上网工具。
 
 <Steps>
-  <Step title="检查连接状态">
-    确保 CrowVPN 已成功连接，可以正常访问其他被墙网站
+  <Step title="打开浏览器">
+    通过浏览器直接访问 TikTok 的官方网站（https://www.tiktok.com/）
   </Step>
-  <Step title="选择合适节点">
-    建议选择美国、日本、韩国等地区的节点，这些地区 TikTok 访问效果较好
+  <Step title="连接 VPN">
+    通过 VPN 或代理工具，确保 IP 地址不显示为中国地区
   </Step>
-  <Step title="测试网络">
-    先访问 YouTube、Google 等网站确认代理工作正常
+  <Step title="登录或注册">
+    登录或注册账号，即可浏览平台内容
   </Step>
 </Steps>
 
-### 2. 下载 TikTok 应用
+**优点：**
+- 无需下载程序
+- 新用户网页端注册 TikTok 也非常方便
+- 完美解决 SIM 卡检测问题
+
+**缺点：**
+- 体验感没有手机刷视频流畅
+- 部分功能会受限
+- 如果没有绑定手机号，私信这些功能还是会被限制
+
+---
+
+### 2. 安卓免拔卡使用 TikTok
+
+在安卓系统上使用 TikTok 相对复杂，除了传统的拔卡方法，还有一些替代方案可以尝试：
 
 <AccordionGroup>
-  <Accordion title="iOS 设备">
-    1. 切换到非中国区 Apple ID
-    2. 在 App Store 搜索 "TikTok"
-    3. 下载并安装 TikTok 应用
-    4. 确保 CrowVPN 保持连接状态
+  <Accordion title="方法一：通过修改系统规则使用 TikTok">
+    用户可以安装系统修改工具来调整设备的 SIM 卡信息。这种方法的优势在于无需拔卡或更改手机的地区和语言设置即可正常使用 TikTok 官方版。
+    
+    **注意：** 此方法操作复杂，对普通用户不太友好。
   </Accordion>
   
-  <Accordion title="Android 设备">
-    1. 访问 TikTok 官网或第三方应用商店
-    2. 下载 TikTok APK 文件
-    3. 安装 TikTok 应用
-    4. 确保 CrowVPN 保持连接状态
-  </Accordion>
-</AccordionGroup>
-
-### 3. 注册 TikTok 账号
-
-<AccordionGroup>
-  <Accordion title="注册方式">
-    推荐注册方式：
-    - 使用手机号码注册
-    - 使用邮箱注册
-    - 使用第三方账号登录（Google、Facebook 等）
+  <Accordion title="方法二：下载 TikTok 破解版">
+    如果希望更简单的解决方案，可以选择 TikTok 的修改版（TikTok Mod）。通过浏览器搜索"TikTok 破解版"或"Tiktok Mod"，即可找到相关下载资源。
+    
+    **注意事项：**
+    - 破解版应用可能存在一定的安全风险（如恶意软件）
+    - 建议选择可靠的平台下载，以降低风险
+    - 通过下载和安装破解版 TikTok 后，用户无需拔卡即可在国内使用 TikTok
   </Accordion>
   
-  <Accordion title="注意事项">
-    注册时需要注意：
-    - 选择与 CrowVPN 节点相同的地区
-    - 使用真实的个人信息
-    - 避免频繁切换地区
+  <Accordion title="方法三：使用 Google Play Store 下载">
+    1. 使用科学上网工具连接到海外节点
+    2. 通过 Google Play Store 下载 TikTok
+    3. 或者直接下载 TikTok 的 APK 安装包
+    4. 确保 CrowVPN 保持连接状态
   </Accordion>
 </AccordionGroup>
 
 ---
 
-## 使用技巧
+### 3. iOS 免拔卡使用 TikTok
 
-### 优化 TikTok 体验
+据悉，目前最新版 iOS 系统已不再检测 SIM 卡，不少用户通过切换到美区 Apple ID 后，从 App Store 下载 TikTok，并使用对应地区的代理即可正常使用。
+
+<Steps>
+  <Step title="切换到非中国区 Apple ID">
+    切换到美区或其他非中国区的 Apple ID
+  </Step>
+  <Step title="下载 TikTok">
+    在 App Store 中搜索并下载 TikTok
+  </Step>
+  <Step title="调整系统设置">
+    为确保顺利运行，建议在使用前调整以下设置：
+  </Step>
+</Steps>
 
 <AccordionGroup>
-  <Accordion title="节点选择">
-    推荐节点类型：
-    - **美国节点**：内容最丰富，推荐度高
-    - **日本节点**：延迟较低，速度较快
-    - **韩国节点**：亚洲内容较多
-    - **欧洲节点**：内容质量较高
+  <Accordion title="地区设置">
+    前往"设置" > "通用" > "语言与地区"，将地区更改为国外。
   </Accordion>
   
-  <Accordion title="网络优化">
-    提高使用体验：
-    1. 选择延迟较低的节点
-    2. 避免在网络高峰期使用
-    3. 使用稳定的网络环境
-    4. 定期更新 CrowVPN 配置
+  <Accordion title="关闭定位服务">
+    在"设置" > "隐私与安全" > "定位服务"中，关闭定位服务。
+  </Accordion>
+  
+  <Accordion title="关闭跟踪">
+    在"隐私与安全" > "跟踪"中，关闭"允许 App 请求跟踪"。
   </Accordion>
 </AccordionGroup>
 
-### 常见问题解决
+**注意：** 不保证这是系统 bug，有可能会修复或者之后的版本也用不了。
+
+**其他方法：**
+- 和安卓版本一样，下载破解版 TikTok
+- 使用魔法上网软件的 rewrite 规则来绕过 TikTok 的限制也同样适用于 iOS 用户
+
+---
+
+### 4. 使用国际 SIM 卡或境外手机号
+
+不论是安卓还是苹果用户，直接使用国际 SIM 卡就不用担心 SIM 归属检测的问题了。
 
 <AccordionGroup>
+  <Accordion title="实体 SIM 卡">
+    可通过 KnowRoaming 等国际 SIM 卡提供商的官网购买。选择合适的套餐并填写收货地址后，商家会邮寄 SIM 卡。收到后按照激活教程操作即可使用。
+  </Accordion>
+  
+  <Accordion title="eSIM 卡">
+    支持 eSIM 的设备可以选择 Airalo 或 Holafly 等提供的全球覆盖 eSIM 卡。通过扫描二维码安装 eSIM 配置文件，无需实体卡，使用更便捷。
+  </Accordion>
+</AccordionGroup>
+
+**注意：** 国际 SIM 卡的成本相对较高，但对需要长期稳定运营 TikTok 账号的用户来说是一个不错的选择。
+
+---
+
+## TikTok 使用相关问答
+
+<AccordionGroup>
+  <Accordion title="为什么翻墙了也看不了 TikTok?">
+    翻墙也看不了 TikTok 的话，如果是网页端访问 TikTok，可能是因为选择的线路有问题，建议切换别的国家的线路再试。
+    
+    如果是移动端下载了 TikTok App 的话，看不了是因为该程序会检测 SIM 卡归属地，可以清除使用痕迹拔卡使用，或者直接下载破解版 TikTok 使用。
+  </Accordion>
+  
+  <Accordion title="国内怎么下载 TikTok？">
+    **iOS 设备国内下载 TikTok：**
+    1. 使用科学上网工具连接到海外节点
+    2. 切换到非国区的 Apple ID（如美区）
+    3. 在 App Store 中搜索并下载 TikTok
+    
+    **安卓设备国内下载 TikTok：**
+    1. 使用科学上网工具连接到海外节点
+    2. 通过 Google Play Store 下载 TikTok
+    3. 或者直接下载 TikTok 的 APK 安装包
+  </Accordion>
+  
   <Accordion title="无法加载视频">
     可能原因和解决方法：
     1. **网络问题**：检查 CrowVPN 连接状态
-    2. **节点问题**：尝试更换其他节点
+    2. **节点问题**：尝试更换其他节点，避开封锁地区
     3. **应用问题**：重启 TikTok 应用
     4. **缓存问题**：清除应用缓存
+    5. **系统设置**：检查时区、语言和地区设置
   </Accordion>
   
   <Accordion title="视频播放卡顿">
@@ -104,6 +197,7 @@ description: "CrowVPN 使用 TikTok 的详细指南"
     2. 关闭其他占用网络的应用
     3. 检查本地网络状况
     4. 尝试使用专线节点
+    5. 确保 VPN 连接稳定
   </Accordion>
   
   <Accordion title="无法上传视频">
@@ -125,10 +219,8 @@ description: "CrowVPN 使用 TikTok 的详细指南"
 
 ## 安全注意事项
 
-### 隐私保护
-
 <AccordionGroup>
-  <Accordion title="个人信息">
+  <Accordion title="个人信息保护">
     使用 TikTok 时注意：
     - 不要泄露真实身份信息
     - 谨慎分享个人照片和视频
@@ -142,68 +234,15 @@ description: "CrowVPN 使用 TikTok 的详细指南"
     - 不要在公共 Wi-Fi 上使用
     - 定期更新应用和系统
     - 使用强密码保护账号
+    - 选择可靠的 VPN 服务，确保伪装度达到 80% 以上
   </Accordion>
-</AccordionGroup>
-
-### 合规使用
-
-<AccordionGroup>
+  
   <Accordion title="内容规范">
     发布内容时注意：
     - 遵守 TikTok 社区准则
     - 不发布违法或不当内容
     - 尊重他人隐私和权利
     - 避免政治敏感话题
-  </Accordion>
-  
-  <Accordion title="账号安全">
-    保护账号安全：
-    - 不要分享账号信息
-    - 定期更换密码
-    - 启用两步验证
-    - 监控异常登录
-  </Accordion>
-</AccordionGroup>
-
----
-
-## 高级设置
-
-### CrowVPN 优化配置
-
-<AccordionGroup>
-  <Accordion title="代理模式">
-    推荐设置：
-    - 使用全局代理模式
-    - 确保 TikTok 流量通过代理
-    - 避免直连 TikTok 服务器
-  </Accordion>
-  
-  <Accordion title="DNS 设置">
-    优化 DNS：
-    - 使用 8.8.8.8 或 1.1.1.1
-    - 避免使用国内 DNS
-    - 定期清理 DNS 缓存
-  </Accordion>
-</AccordionGroup>
-
-### 故障排除
-
-<AccordionGroup>
-  <Accordion title="连接问题">
-    如果 TikTok 无法连接：
-    1. 检查 CrowVPN 是否正常工作
-    2. 尝试更换其他节点
-    3. 重启 CrowVPN 客户端
-    4. 检查防火墙设置
-  </Accordion>
-  
-  <Accordion title="性能问题">
-    如果使用体验不佳：
-    1. 选择更快的节点
-    2. 关闭其他网络应用
-    3. 检查本地网络状况
-    4. 更新 CrowVPN 配置
   </Accordion>
 </AccordionGroup>
 
