@@ -1,26 +1,26 @@
 {
   "macos": {
     "apple": {
-      "version": "2.0.1",
-      "filename": "crowvpn-apple-2.0.1.dmg",
-      "url": "https://cloud.crowmesh.com/crowvpn-apple-2.0.1.dmg"
+      "version": "2.1.1",
+      "filename": "crowvpn-apple-2.1.1.dmg",
+      "url": "https://cloud.crowmesh.com/crowvpn-apple-2.1.1.dmg"
     },
     "intel": {
-      "version": "2.0.1",
-      "filename": "crowvpn-intel-2.0.1.dmg",
-      "url": "https://cloud.crowmesh.com/crowvpn-intel-2.0.1.dmg"
+      "version": "2.1.1",
+      "filename": "crowvpn-intel-2.1.1.dmg",
+      "url": "https://cloud.crowmesh.com/crowvpn-intel-2.1.1.dmg"
     }
   },
   "windows": {
     "x64": {
-      "version": "2.0.1",
-      "filename": "crowvpn-windows-2.0.1-x64-setup.exe",
-      "url": "https://cloud.crowmesh.com/crowvpn-windows-2.0.1-x64-setup.exe"
+      "version": "2.1.1",
+      "filename": "crowvpn-windows-2.1.1-x64-setup.exe",
+      "url": "https://cloud.crowmesh.com/crowvpn-windows-2.1.1-x64-setup.exe"
     },
     "arm64": {
-      "version": "2.0.1",
-      "filename": "crowvpn-windows-2.0.1-arm64-setup.exe",
-      "url": "https://cloud.crowmesh.com/crowvpn-windows-2.0.1-arm64-setup.exe"
+      "version": "2.1.1",
+      "filename": "crowvpn-windows-2.1.1-arm64-setup.exe",
+      "url": "https://cloud.crowmesh.com/crowvpn-windows-2.1.1-arm64-setup.exe"
     }
   }
 }
